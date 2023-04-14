@@ -19,8 +19,7 @@ class App extends Component {
       <ImageLinkForm />
       <Particlesbg />
 
-      {/*
-       <FaceRecognition />*/}
+       {/* <FaceRecognition /> */}
     </div>
   );
 }
