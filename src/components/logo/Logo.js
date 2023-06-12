@@ -1,8 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Tilt from 'react-parallax-tilt';
 import brain from './brain.png';
 import './Logo.css';
+
 
 const Logo = () => {
     return (
@@ -14,6 +14,4 @@ const Logo = () => {
         </div>
     );
     }
-
-ReactDOM.render(<Logo />, document.getElementById('root'));
 export default Logo;
