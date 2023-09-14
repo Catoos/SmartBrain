@@ -29,6 +29,7 @@ class Register extends React.Component {
 
   onSubmitSignIn = () =>
   {
+    try {
     fetch('http://localhost:3000/register', {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
@@ -38,13 +39,17 @@ class Register extends React.Component {
         name: this.state.name
       })
     })
-    .then(response => response.json())
+    .then(response => {
+      console.log(response);
+      return response.json()})
     .then(user => {
-      if(user) {
-        this.props.loadUser(user)
+      if(user.id) {
+        this.props.loadUser(user);
         this.props.onRouteChange('home');
       }
     })
+  }
+  catch(err) { console.log(err); }
   }
 
   render(){
