@@ -77,7 +77,7 @@ const Particlesbg = () => {
                         type: "circle",
                     },
                     size: {
-                        value: { min: 1, max: 5 },
+                        value: { min: 1, max: 20 },
                     },
                 },
                 detectRetina: true,
