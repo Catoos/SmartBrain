@@ -14,8 +14,8 @@ import './App.css';
     input: '',
       imageUrl: '',
       box: {},
-      route: 'signin',
-      isSignedIn: false,
+      route: 'home',
+      isSignedIn: true, //change back to signin and false
       user: {
         id: '',
         name: '',
